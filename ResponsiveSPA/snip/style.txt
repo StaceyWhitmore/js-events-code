@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans");
+}
+
+html {
+  font-family: "Open Sans", "Bitstream Vera Serif", Verdana, sans-serif, serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px;
+}
+
+/*Caption to left of thumbnails*/
+.text-col {
+  float: left;
+  /*top: 0px;*/
+  /*right:0px;*/
+}
+
+/* The grid for thumnbnails: Several equal columns that floats next to each other */
+.column {
+  float: right;
+  width: 10%;
+  padding: 5px;
+}
+
+/* Style the thumbnail images inside the grid */
+.column {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1; /*More opaque*/
+}
+
+/*thumbnail row */
+.row {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* Clear floats AFTER the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Container for expanded image*/
+.container {
+  /*position: relative;*/
+  /*x-pos relative*/
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/*
+.video-col {
+  float: left;
+}
+*/
+
+#image-caption {
+  /*position: absolute;*/
+  color: gray;
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* Expanding image text set to absolute bottom-left position*/
+
+#image-text {
+  position: absolute;
+  /*image text position*/
+  /*display: block; NEW*/
+  /*bottom: 10px;*/
+  /*left:  10px;*/
+  color: dark gray;
+  font-size: 20px;
+}
+
+#video-text {
+  color: dark gray;
+  font-size: 20px;
+}
+
+#video-caption {
+  /*position: absolute;*/
+  color: gray;
+  font-size: 15px;
+  font-style: italic;
+}
+
+
+/*LOWER REGION**CSS grid************************/
+
+.indent-top {
+  grid-area: indent-top;
+}
+
+/*
+div .indent-top {
+  background-color: white;
+  color: gray;
+}
+*/
+
+.paragraph {
+  grid-area: paragraph;
+  position: relative;
+}
+
+.paragraph2 {
+  grid-area: paragraph2;
+  position: relative;
+}
+
+.paragraph3 {
+  grid-area: paragraph3;
+  position: relative;
+}
+
+.sub-heading {
+  grid-area: sub-heading;
+  position: relative;
+}
+
+.video {
+  grid-area: video;
+  positon: relative;
+}
+
+
+.indent-bottom {
+  grid-area: indent-bottom;
+  positon: relative;
+}
+
+/*
+div .indent-bottom {
+  background-color: white;
+  color: gray;
+}
+*/
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+   "header  header  header header"
+   "paragraph paragraph paragraph indent-top"
+   "paragraph2 paragraph2 video video"
+   "paragraph3 paragraph3 paragraph3 indent-bottom"
+   "sub-heading  sub-heading  sub-heading indent-bottom";
+  background-color: white;
+  color: #444;
+}
+
+.box {
+  background-color: white;
+  color: gray;
+  border-radius: 5px;
+  padding: 50px;
+  font-size: 150%;
+}
+
+.header {
+  background-color: white;
+}

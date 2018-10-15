@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Article</title>
+  <noscript>
+  <p>You need JavaScript to view the contents of this page.</p>
+ </noscript>
+
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+
+<body>
+
+  <!-- The expanding image container -->
+  <div class="container">
+    <div style="text-align:left">
+      <p>Sub Title</p>
+      <h2>Title of the Section</h2>
+    </div>
+
+    <img id="expanded-image" style="width:100%" src="http://moonchylde.io/small-photos/photo01.jpg" alt="Photograph Nõ.01">
+
+  </div>
+  <!-- Close expanded image container -->
+
+
+  <!-- The grid: ten columns -->
+  <div class="row">
+
+    <div class="text-col">
+      <h1 id="image-text">Photograph No.01</h1>
+      <br/>
+      <p id="image-caption">Image Caption</p>
+    </div>
+
+    <div class="column">
+      <img src="http://moonchylde.io/small-photos/photo01.jpg" alt="Photograph No.01" style="width: 100%" onclick="selectImage(this);">
+    </div>
+    <div class="column">
+      <img src="http://moonchylde.io/small-photos/photo02.jpg" alt="Photograph No.02" style="width: 100%" onclick="selectImage(this);">
+    </div>
+    <div class="column">
+      <img src="http://moonchylde.io/small-photos/photo10.jpg" alt="Photograph No.10" style="width: 100%" onclick="selectImage(this);">
+    </div>
+    <div class="column">
+      <img src="http://moonchylde.io/small-photos/photo04.jpg" alt="Photograph No.04" style="width: 100%" onclick="selectImage(this);">
+    </div>
+
+    <div class="column">
+      <img src="http://moonchylde.io/small-photos/photo05.jpg" alt="Photograph No.05" style="width: 100%" onclick="selectImage(this);">
+    </div>
+    <div class="column">
+      <img src="http://moonchylde.io/small-photos/photo06.jpg" alt="Photograph No.06" style="width: 100%" onclick="selectImage(this);">
+    </div>
+
+    <div class="column">
+      <img src="http://moonchylde.io/small-photos/photo09.jpg" alt="Photograph No.09" style="width: 100%" onclick="selectImage(this);">
+    </div>
+
+
+  </div>
+  <!--Close thumbnail row-->
+
+
+  <script src="article.js" type="text/javascript"></script>
+  <div class="box header">
+  </div>
+  <!-- close box-header-->
+
+  <div class="wrapper">
+
+    <div class="box indent-top"></div>
+
+    <div class="box paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est
+      non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus
+      posuere velit aliquet.
+    </div>
+    <div class="box paragraph2">
+      Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+      <br/><br/> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh
+      ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum
+      faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+    </div>
+
+    <div class="box paragraph3">Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere
+      erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</div>
+    <div class="box indent-bottom"></div>
+    <div class="box sub-heading">
+
+      <h2>Sub-heading</h2>
+      <p>
+        Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+        Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+        <br/><br/> Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Maecenas faucibus mollis
+        interdum.
+        <br/><br/> Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.
+      </p>
+
+
+    </div>
+  </div>
+  <!-- close wrapper class-->
+
+</body>
+
+</html>
