@@ -1,6 +1,6 @@
 ### 20 minute Presentation on (vanilla)JS Events
 ## Code for 20 min presentation I am giving on the JS event-driven programming model
-## Notice the lesson's focus is on implementing events using plain vanillaJS and make use of any JS libraries or frameworks.
+## Notice the lesson's focus is on implementing events using plain vanillaJS and does Not make use of any JS libraries or frameworks.
 #Here are some of the details for the lesson:
 
 *SHOW your students a RESPONSIVE single page web page/application where the user will trigger an event and EXPLAIN the code to them.
