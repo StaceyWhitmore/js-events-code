@@ -1,7 +1,22 @@
+/*
 @font-face {
   font-family: "Open Sans";
   src: url("https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans");
 }
+*/
+
+/*Caption to left of thumbnails*/
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  /*.text-col { float: left; display:none;} */
+  .text.col { visibility: hidden;}  /*HIDE it on small screens*/
+
+} /*close @media for Small screens*/
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  /*.text-col { float: left; display:block;} */
+  .text.col { float: left; display:block;}  /*SHOW it on large screens*/
+} /*close @media for Large screens*/
+
 
 html {
   font-family: "Open Sans", "Bitstream Vera Serif", Verdana, sans-serif, serif;
@@ -14,14 +29,20 @@ html {
 
 body {
   margin: 100px;
+  /*background: blue;*/
 }
 
-/*Caption to left of thumbnails*/
+/*@media Query*/
 .text-col {
   float: left;
-  /*top: 0px;*/
-  /*right:0px;*/
+  display: block;
 }
+
+
+
+
+
+
 
 /* The grid for thumnbnails: Several equal columns that floats next to each other */
 .column {

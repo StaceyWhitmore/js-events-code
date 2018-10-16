@@ -1,7 +1,7 @@
 //"use strict"
 //declare variables for button
-let myImg = document.createElement('img');
-let imgSrc1 = "https://i.kym-cdn.com/entries/icons/original/000/011/365/GRUMPYCAT.jpg"
+const myImg = document.createElement('img');
+const imgSrc1 = "https://i.kym-cdn.com/entries/icons/original/000/011/365/GRUMPYCAT.jpg"
 //...and for changing the image
 let imgSrc2  = "https://i.kym-cdn.com/photos/images/original/000/406/346/fd3.jpg"
 let imgClicked = false
